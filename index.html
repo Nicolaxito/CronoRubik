@@ -244,7 +244,7 @@
                     </div>
 
                     {/* Historial y AO5 */}
-                    <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6 pb-8">
+                    <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-6 pb-4">
                         <div className="bg-slate-800/50 rounded-3xl p-6 border border-slate-700 flex flex-col">
                             <h2 className="text-xs font-black uppercase text-blue-400 mb-4 flex items-center gap-2"><i data-lucide="history" className="w-4 h-4"></i> Historial Local</h2>
                             <div className="max-h-40 overflow-y-auto space-y-2 pr-2 custom-scrollbar">
@@ -271,6 +271,13 @@
                                 <p className="text-3xl font-mono font-bold text-yellow-400">{solves.length > 0 ? formatTime(Math.min(...solves.map(s=>s.time))) : "--"}</p>
                             </div>
                         </div>
+                    </div>
+
+                    {/* Crédito Final */}
+                    <div className="mt-8 mb-4 text-[10px] text-slate-600 font-bold uppercase tracking-[0.3em] opacity-50 hover:opacity-100 transition-opacity flex items-center gap-2">
+                        <span className="w-4 h-[1px] bg-slate-700"></span>
+                        Hecho por Nicolaxito
+                        <span className="w-4 h-[1px] bg-slate-700"></span>
                     </div>
                 </div>
             );
